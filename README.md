@@ -16,3 +16,16 @@ hosted at: https://tom-kraus87.github.io/developer-portfolio/
      - Mario Portfolio
      - Photo Phrend
       
+  - projects to be added to itwp1100-projects folder:
+    - Financial Planning Tips
+    - Lunch Menu w/Tax Selection
+    - Lunch Menu Selection
+    - Jane Austen Quotes
+    - Photo Ranking
+    - Checkout Form
+    - Poker Hand
+    - Bouncing Balls
+    - Rider Profile
+    - Tangrams
+    - Astronomy Picture of the Day
+    - Apple Bavarian Torte Recipe
