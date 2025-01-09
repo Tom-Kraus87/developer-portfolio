@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>Photo Phrend</title>
+  <meta name="description" content="This is the Submit page to the Photo Phrend website which allows you to submit a photo for a chance to win the websites photo contest and have the photo displayed in the gallery or the winners gallery.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="website keywords, website keywords">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Photo<span class="logo_colour">Phrend</span></a></h1>
+          <h2>A place to share your phavorite photos.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html" title="Photo Phrend home page">Photo Phrend</a></li>
+          <li><a href="rules.html" title="Rules page">Rules</a></li>
+          <li><a href="categories.html" title="Photo categories">Categories</a></li>
+          <li class="selected"><a href="submitphotos.html" title="Photo submissions page">Submit Photos</a></li>
+          <li><a href="vote.html" title="Vote for contest">Vote</a></li>
+          <li><a href="gallery.html" title="Photo gallery">Gallery</a></li>
+          <li><a href="winners.html" title="Contest winners">Winners</a></li>
+          <li><a href="contact.html" title="Contact page">Contact Us</a></li>
+          <li><a href="../home.htm" title="Back to the course homepage">Course Homepage</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>New Website!</h3>
+        <h5>Past Winners</h5>
+        <p>Check out our <a href="winners.html">winners</a> page to see our previous months winners of the photo contest.</p>
+        
+        <h3>Related Photo Galleries</h3>
+        <ul>
+          <li><a href="https://rufflifephotography.pixieset.com/">Ruff Life Photography</a></li>
+          <li><a href="https://pixabay.com/images/search/nature/">Pixabay</a></li>
+          <li><a href="https://scatterjar.com/">Scatter Jar</a></li>
+        </ul>
+        <h4><a href="contact.html">Connect with other users!</a></h4>
+      </div>
+      <div id="content">
+        
+
+        <!-- insert the page content here -->
+        <h1>Submit Your Photo Here</h1>
+        <p>Prior to submitting your photo, please make sure you've followed the <a href="rules.html">guidelines</a> properly to ensure there is no issues with your submissions. If you have any questions about your submissions, please <a href="contact.html">contact</a> the team and we will do our best to help you.</p>
+        <p>To submit your photo, please fill out the form below. Attach your file using the attach file button in the provided form. In the message box, let us know what contest you wish to enter based on the category of the photo being submitted.</p>
+        <form method="post" action="mailto:kraus.tom.1987@gmail.com" enctype="text/plain">
+          <div class="form_settings">
+            <p><span>Name</span><input class="contact" type="text" name="your_name" required placeholder="Full Name"></p>
+            <p><span>Email Address</span><input class="contact" type="text" name="your_email" required placeholder="someemail@email.com"></p>
+            <p><span>Attach File</span><input class="conatct" type="file" name="file"></p>
+            <p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry" required placeholder="Enter your message here"></textarea></p>
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="submit"></p>
+          </div>
+        </form>
+        <br>
+      </div>
+    </div>
+  </div>
+    
+    <div id="content_footer"></div>
+    <div id="footer">
+      <script src="js/footer_navigation_submitphotos.js"></script>
+    </div>
+</body>
+</html>
