@@ -1,0 +1,95 @@
+/* CCS Document used for the coffee table homework assignment
+Author: Tom Kraus
+Course: ITWP 1000
+File: styles.css
+Information on using external CSS style sheet is located in Chapter 3. Information on media queries is located in 
+Chapter 7.Information on tables and CSS formatting for tables is located in Chapter 8.
+*/
+
+body {
+    margin-top: 1em;
+    margin-bottom: auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+p, div {
+    margin: 10px;
+    padding: 20px;
+    line-height: 1.5em;
+}
+
+/* table formatting */
+
+table {
+    margin: auto;
+    border: 5px solid #3f2a14;
+    width: 100%;
+    border-spacing: 0;
+}
+
+td, th {
+    border-style: none;
+    padding: 0.5em;
+    width: auto;
+}
+
+tfoot td {
+    font-size: 9px;
+    font-style: italic;
+    text-align: center;
+}
+
+tr:nth-of-type(even) {
+    background-color: #eaeaea;
+}
+
+thead:first-of-type {
+    background-color: #3f2a14;
+    color: #FFF;
+}
+
+/* caption */
+
+caption {
+    font-family: Impact, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+    font-weight: bold;
+    font-size: 1.75em;
+    padding-bottom: 0.5em;
+}
+
+/* responsive image class */
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #51471A;
+    border-radius: 10px;
+}
+
+td.price {
+    white-space: nowrap;
+}
+
+td.specialty {
+    white-space: nowrap;
+}
+
+/* ID */
+
+#ID {
+    text-align: center;
+}
+
+/* media query that hides the image when the screen size is @550 pixels or lower */
+
+@media only all and (max-width: 550px) {
+
+    img {
+        display: none;
+    }
+}

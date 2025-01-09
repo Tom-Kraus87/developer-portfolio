@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mario's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/mario.png" alt="mario" title="mario" /></span>
+							<h1 id="title">Mario Mario</h1>
+							<p>Italian-American Plumber</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">My Games</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Mario</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+							<p>For this project, I decided to use a one page portfolio template, and create a portfolio from the perspective of Mario.
+								There was quite a bit that I had to edit in the CSS style sheet. This also proved to me that there is a lot to learn in regards to web-design. This was a fun, yet challenging project. I implemented a javascript LCD clock in top-left of the "nav" section. The style sheet is in the "main.css" at the top. (I had a hard time with correctly formatting the "phone" form into the contact section as this dealt with a lot of manipulating the CSS sheet).
+							</p>
+							<span id="digitalclock" style="position: absolute; left:0; top: 0;" class="styling"></span>
+
+<script>
+<!--
+
+//LCD Clock script- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+var alternate=0
+var standardbrowser=!document.all&&!document.getElementById
+
+if (standardbrowser)
+document.write('<form name="tick"><input type="text" name="tock" size="11"></form>')
+
+function show(){
+if (!standardbrowser)
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (standardbrowser){
+if (alternate==0)
+document.tick.tock.value=hours+" : "+minutes+" "+dn
+else
+document.tick.tock.value=hours+"   "+minutes+" "+dn
+}
+else{
+if (alternate==0)
+clockobj.innerHTML=hours+" : "+minutes+" "+"<sup style='font-size:70%'>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+" : "+minutes+" "+"<sup style='font-size:70%'>"+dn+"</sup>"
+}
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script>
+
+<p>This free script provided by<br />
+<a href="http://javascriptkit.com">JavaScript
+Kit</a></p>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+							<li><a href="mailto:kraust834@macomb.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Hi! I'm <a href="https://www.mariowiki.com/Mario">Mario</a>, The main character and titular protagonist of the long-running and highly successful <a href="https://www.mariowiki.com/Super_Mario_(franchise)">Super Mario franchise.</a><br /></h2>
+								<p>I was created by <a href="https://www.mariowiki.com/Shigeru_Miyamoto">Shigeru Miyamoto</a>, and I am the main mascot of Nintendo.</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">My Games</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>My Games</h2>
+							</header>
+
+							<p>Join me and my brother Luigi, as we travel through Mushroom Kingdom and foil the plans of the evil Koopa villain King Bowser, and his army of minions, as he continously threatens the peace of Mushroom Kingdom by kidnapping princess Peach Toadstool.</p>
+							<p>Below are a few of the games from 1985-1996 that served as the beginning of the Super Mario franchise.</p>
+							<p>Click on the pictures below to learn more.</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://www.mariowiki.com/Super_Mario_Bros." class="image fit"><img src="images/SMB1_boxart.jpg" alt="Super Mario Bros" title="Super Mario Bros" /></a>
+										<header>
+											<h3>Super Mario Bros. (1985)</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://www.mariowiki.com/Super_Mario_World" class="image fit"><img src="images/SMW_Boxart.jpg" alt="Super Mario World" title="Super Mario World" /></a>
+										<header>
+											<h3>Super Mario World (1991)</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://www.mariowiki.com/Super_Mario_Bros._2" class="image fit"><img src="images/SMB2_Boxart.jpg" alt="Super Mario Bros 2" title="Super Mario Bros 2" /></a>
+										<header>
+											<h3>Super Mario Bros. 2 (1988)</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://en.wikipedia.org/wiki/Super_Mario_64" class="image fit"><img src="images/SM64_Boxart.jpg" alt="Super Mario 64" title="Super Mario 64" /></a>
+										<header>
+											<h3>Super Mario 64 (1996)</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://www.mariowiki.com/Super_Mario_Bros._3" class="image fit"><img src="images/SMB3_Boxart.jpg" alt="Super Mario Bros 3" title="Super Mario Bros 3" /></a>
+										<header>
+											<h3>Super Mario Bros. 3 (1990)</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Mario</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/Super_Mario_banner.jpg" alt="Super Mario Banner" title="Super Mario Banner" /></a>
+
+							<p>The franchise revolves around the adventures of an extensive cast of recurring characters.<br>
+								The main protagonist of the franchise, the titular Mario, is a fictional Italian-American plumber who serves as the hero of a realm called the Mushroom Kingdom,<br>
+								which he endeavors to defend by traversing through stages filled with obstacles and enemies.<br><br> 
+								His arch-nemesis is Bowser, the king of the Koopas, a race of evil-driven anthropomorphic turtles.<br>
+								Bowser is responsible for the vast majority of the Mushroom Kingdom's invasions, and almost always appears as the final boss,<br> 
+								who consistently attempts to put an end to the escapades of Mario and his friends.<br><br>
+			
+								Mario's younger but taller twin brother, Luigi, often participates in his adventures alongside him.<br> 
+								In early games, he was playable only in the two-player mode as a simple palette swap, but with the passage of time, he went on to gain more significant roles.<br> 
+								The Mushroom Kingdom's ruler, Princess Peach, is Mario's love interest and recurring damsel in distress.<br> 
+								She repeatedly gets kidnapped by Bowser and has to be rescued by Mario, but occasionally serves as a protagonist herself.<br>
+								Her kingdom's inhabitants and her personal servants are the Toads, a species of fungal creatures who often support Mario during his adventures.<br><br></p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Have you ever played any of the Super Mario franchise?<br>
+								What is your favorite Super Mario game?<br>
+								Is there a Super Mario game you would like to know more about?<br>
+								Leave your Name, Email, Phone Number, and Message below to discuss more about Super Mario and the other games within the franchise.<br>
+								Thank you and I hope you enjoyed my portfolio.</p>
+
+							<form method="post" action="mailto:kraust834@macomb.edu" enctype="text/plain">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><span>Name: </span><input type="text" name="name" id="name" required placeholder="Full Name" /></div>
+									<div class="col-6 col-12-mobile"><span>Email: </span><input type="text" name="email" id="email" required placeholder="Email Address" /></div>
+									<div class="col-12 col-12-mobile"><span>Phone: </span><input type="tel" name="Phone" id="Phone" required placeholder="586-123-4567" /></div>
+									<div class="col-12"><span>Message: </span>
+										<textarea name="message" id="message" required placeholder="Please type your message here"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Tom Kraus. All rights reserved.</li><li>Images: <a href="https://www.mariowiki.com/" title="Learn morew about Super Mario">SuperMarioWiki</a></li><li>Website Template: <a href="http://html5up.net" title="Free Website Templates">HTML5 UP</a></li><li>Back to Homepage: <a href="../home.htm" title="Back to the course homepage">Course Homepage</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
