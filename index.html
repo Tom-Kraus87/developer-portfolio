@@ -18,12 +18,48 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
     <head>
         <meta charset="UTF-8">
         <title>Web Development Project Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charm&family=Honk&family=Amatic+SC&display=swap" rel="stylesheet">
+        <style>
+            html {
+                background-color:mediumaquamarine;
+            }
+
+            img {
+                border: 2px, solid, black;
+            }
+
+            #ralph {
+                border: 3px, solid black;
+            }
+
+            body h1 {
+                font-family: "Charm", serif;
+                font-size: 40px;
+                margin: 0;
+            }
+
+            #webdev-header {
+                font-family: "Honk", serif;
+                font-size: 50px;
+                margin: 0;
+            }
+
+            body h2 {
+                font-family: "Amatic SC", serif;
+                font-size: 40px;
+                margin: 0;
+            }
+            
+        </style>
     </head>
     <body>
         <h1>Tom Kraus's Portfolio</h1>
-        <h2>I'm a Web Developer!</h2>
-        <img src="./assets/images/ralph-computer.jpg">
+        <h2 id="webdev-header">I'm a Web Developer!</h2>
+        <img id="ralph" src="./assets/images/ralph-computer.jpg">
         <hr>
+
         <h2>Bootcamp Projects</h2>
         <hr>
 
@@ -44,6 +80,11 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
         <h3><a href="./public/bootcamp-projects/spanish-flashcards/index.html">
             Spanish Study Flashcards<br><br>
             <img src="./assets/images/bootcamp-projects/spanish-flashcards.png" height="200" alt="Spanish Flashcards preview"></a></h3>
+        <hr>
+
+        <h3><a href="./public/bootcamp-projects/motivational-poster/index.html">
+            Motivational Poster<br><br>
+            <img src="./assets/images/bootcamp-projects/motivational-poster.png" height="200" alt="Motivational Poster preview"></a></h3>
         <hr>
 
         <h2>ITWP-1000 (HTML & CSS) Projects</h2>
