@@ -8,6 +8,10 @@ h1 {
     text-transform: uppercase;
     }
 
+p   {
+    font-family: "Libre Baskerville", sans-serif;
+    }
+
 div img {
     width: 100%;
     border: 5px, solid, white;
