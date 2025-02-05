@@ -1,0 +1,29 @@
+html {
+    background-color:mediumaquamarine;
+}
+
+img {
+    border: 2px, solid, black;
+}
+
+#ralph {
+    border: 3px, solid black;
+}
+
+body h1 {
+    font-family: "Charm", serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+#webdev-header {
+    font-family: "Honk", serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+body h2 {
+    font-family: "Amatic SC", serif;
+    font-size: 40px;
+    margin: 0;
+}
